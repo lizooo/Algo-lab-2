@@ -1,4 +1,4 @@
-# Defining the problem 
+## Defining the problem 
 
 Горила Джекі із зоопарку Мюнхена любить їсти банани. На складі зоопарку є N кошиків (piles) з бананами, 
 у і-тому кошику є певна кількість бананів Х. Кошики знаходяться під охороною, але охорона здійснює обхід 
@@ -8,30 +8,30 @@
  їсти повільно, але все ж хочеться закінчити споживання всіх бананів, перш ніж охоронці повернуться. Визначіть 
  мінімальне ціле число К таким чином, щоб Джекі могла з'їсти всі банани на складі протягом Н годин, поки повернеться 
  охорона.
- <br>
- </br>
  
- Constraints :
+ # Constraints :
   - 1 <= piles.length <= 10^4
   - piles.length <= H <= 10^9
   - 1 <= piles[i] <= 10^9
   
-  Example 1
+  # Examples:
   
-  Input: piles = [3,6,7,11], H = 8 <br>
-  Output: 4
+  Example 1
+
+     Input: piles = [3,6,7,11], H = 8 <br>
+     Output: 4
   
   Example 2 
   
-  Input: piles = [30,11,23,4,20], H = 5 <br>
-  Output: 30
+     Input: piles = [30,11,23,4,20], H = 5 <br>
+     Output: 30
   
   Example 3
   
-  Input: piles = [30,11,23,4,20], H = 6 <br>
-  Output: 23
+     Input: piles = [30,11,23,4,20], H = 6 <br>
+     Output: 23
   
-  #Logic behind implementation
+  ## Logic behind implementation
   The solution uses binary search to find the smallest speed of consumption that satisfies 
   time boundary given in the task. 
   Main components of execution:
@@ -41,7 +41,7 @@
   <br>
   An explicit walk-through the algorithm is provided alongside with the code 
   
-  # Complexity analyses 
+  ## Complexity analyses 
   
   - Space complexity O(1)
   - Time complexity O(nlog(m))
